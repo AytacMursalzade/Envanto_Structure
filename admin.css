@@ -1,0 +1,256 @@
+.navType a{
+    text-decoration: none;
+
+}
+.headerType{
+    width: 100%;
+    height: 25px;
+    margin-bottom: 8px;
+    font-size: small;
+    color: grey;
+}
+
+
+.navType ul li{
+    list-style-type: none;
+    display: inline;
+    padding: 50px;
+    position: relative;
+}
+
+.navType li ul{
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: red;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    min-width: 150px;
+}
+
+.navType li:hover ul{
+    display: block;
+}
+
+.navType{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 35px;
+}
+.headerType{
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 0 20px;
+    margin-bottom: 50px;
+}
+
+
+.section{
+    width: 100%;
+    height: 500px;
+}
+
+.foottype {
+  display: flex; 
+  justify-content: space-around; 
+  padding: 20px;
+  background-color: #f0f0f0;
+  margin-top: 100px;
+}
+
+.foottype ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.foottype li {
+  margin-bottom: 10px;
+}
+
+.foottype a {
+  text-decoration: none;
+  color: #333;
+}
+
+.asideType h1{
+    font-size: 30px;
+    padding-left: 40%;
+    margin-bottom: 35px;
+    margin-top: 35px;
+
+}
+
+.iMage img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.iMage{
+    width: 200px;
+    height: 200px;
+}
+.lowerPart{
+    font-size: small;
+    width: 100%;
+    padding: 12px;
+}
+.Part2{
+    display: flex;
+    
+}
+.ListName{
+    margin-top: 50px;
+}
+.ListName h1{
+    padding-inline-start: 0;
+}
+.List{
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+.List ul li{
+    list-style-type: none;
+}
+
+.Text h1{
+    padding-inline-start: 0;
+}
+.Reaction ul li a{
+   text-decoration: none;
+   color: #333;
+
+}
+.Reaction h1{
+   margin-top: 25px;
+   margin-bottom: 20px;
+}
+.Reaction ul li{
+    list-style-type: none;
+    display: inline-block;
+    margin-right: 27px;
+    border:2px solid rgb(50, 111, 75);
+    border-radius: 16px;
+    padding: 8px;
+    margin: 5px;
+}
+.Products{
+    background-color: rgb(181, 137, 103);
+    padding-bottom: 20px;
+    margin-top: 50px;
+    border: 1px solid transparent;
+    border-radius: 8px;
+}
+.productTop{
+    padding: 25px;
+}
+.productTop h1{
+    font-size: large;
+}
+.productList a{
+    text-decoration: none;
+    color: #333;
+}
+.productList ul li{
+    list-style-type: none;
+    border: 2px solid wheat;
+    border-radius: 6px;
+    padding-top: 12px;
+    margin-right: 5px;
+    text-align: center;
+    background-color: antiquewhite;
+}
+.productList ul {
+    display: flex; 
+    padding-inline-start: 0; 
+}
+.productList img{
+    width: 80px;
+}
+
+.productRow .col-3{
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+.topMargin{
+    text-align: right;
+}
+.slider{
+    position: relative;
+    width: 400px;
+    height: 530px;
+    overflow: hidden;
+    margin: auto;
+    
+}
+.slide{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: none;
+    object-fit: cover;
+}
+.slide.active{
+    display: block;
+}
+button{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 10px;
+    background: rgba(0,0,0,0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    z-index: 10px;
+}
+#prevBtn{
+    left: 10px;
+    opacity: 0.3;
+    border-radius: 70%;
+}
+#nextBtn{
+    right: 10px;
+    opacity: 0.3;
+    border-radius: 70%;
+}
+.allCategories{
+    position: relative;
+    cursor: pointer;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+    z-index: 10;
+}
+.categoryList {
+  position: absolute;
+  top: 100%;
+  left: 0;  
+  display: none;
+  flex-direction: column;
+  margin-top: 8px;
+}
+
+.categoryList p {
+  margin: 2px 0;
+  padding: 2px 6px;
+  background-color: #bda6a6;
+  border-radius: 4px;
+  color: #222;
+  font-size: 14px;
+}
+.allCategories h1{
+    font-size: 16px;
+    padding-top: 6px;
+    margin: 0;
+    color: black;
+}
+.allCategories.active .categoryList {
+  display: flex;
+}   
